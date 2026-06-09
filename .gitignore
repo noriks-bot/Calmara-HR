@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~
+node_modules/
+.idea/
+.vscode/
+
+# WP runtime / uploads (handled on server)
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+*.zip
+
+# Local dev
+.env
+.env.local
