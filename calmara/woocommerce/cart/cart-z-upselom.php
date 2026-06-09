@@ -100,7 +100,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                   </span>
                   <span class="wc-reserve-note__text">
                     Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
+                    Rezervacija velja samo še <strong id="wc-reserve-timer">10:00</strong> minut.
                   </span>
                 </div>
                 
@@ -373,7 +373,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
  */
 
 
-$TRIGGER_CATEGORY_SLUGS = array( 'bokserice', 'boxers', 'singles-boxers', 'orto-bokserice', 'majice-i-bokserice-paketi', 'black-friday' );
+$TRIGGER_CATEGORY_SLUGS = array( 'boksarice', 'boksarice-sestavi-paket', '1-kos-boksarice', 'orto-bokserice', 'majice-in-boksarice-paketi', 'black-friday' );
 
 $UPSELL_ID_CAT  = 4154;  // ID1 (when category match)
 $UPSELL_ID_ELSE = 4162;  // ID2 (when NO category match) <-- change 999 to your real product id
@@ -479,7 +479,7 @@ $img_id     = $display_obj->get_image_id();
 $upsell_img = $img_id ? wp_get_attachment_image_url( $img_id, 'woocommerce_thumbnail' ) : wc_placeholder_img_src('woocommerce_thumbnail');
 
 $desc = wp_strip_all_tags( $display_obj->get_short_description() );
-if ( ! $desc ) $desc = 'Odličen dodatek k tvoji narudžbi.';
+if ( ! $desc ) $desc = 'Odličen dodatek k tvojemu naročilu.';
 
 $price_pill = wp_strip_all_tags( wc_price( $display_obj->get_price() ) );
 

@@ -193,8 +193,8 @@ function noriks_upsell_modal_markup() {
                     </select>
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
-                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Odaberite sve opcije</div>
-                <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ U KOŠARICU</button>
+                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Izberi</div>
+                <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ V KOŠARICU</button>
             </div>
 
         </div>
@@ -546,7 +546,7 @@ function noriks_upsell_modal_markup() {
                 return;
             }
 
-            $btn.addClass('adding').text('DODAJEM...');
+            $btn.addClass('adding').text('DODAJAM...');
 
             var qty = parseInt($('#noriks-qty-val').val()) || 1;
             var data = {

@@ -187,7 +187,7 @@
 <div id="custom-size-chart-backdrop"></div>
 <div id="custom-size-chart-modal" aria-modal="true" role="dialog" aria-labelledby="custom-size-chart-title">
   <div class="size-chart-titlebar">
-    <h2 id="custom-size-chart-title">Tablica veličina</h2>
+    <h2 id="custom-size-chart-title">Tabela velikosti</h2>
     <span id="close-size-chart-x" style="font-size: 26px; font-weight: bold; cursor: pointer;
       background: #000; border-radius: 2px; width: 34px; height: 34px;
       display: inline-flex; align-items: center; justify-content: center;
@@ -198,26 +198,26 @@
   <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
         class="size-chart-left">
       
-      <?php if ( has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
+      <?php if ( has_term( array( 'boksarice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
        !has_term( 'black-friday', 'product_cat', get_the_ID() )   ): ?>
       
     <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/hr/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="https://noriks.com/si/wp-content/uploads/2026/04/bokserice_si.jpg"
       alt="Size Guide">
       
       
        
-      <?php elseif ( has_term( array( 'carape', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( has_term( array( 'nogavice', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
       
       
        <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/hr/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg"
+      src="https://noriks.com/si/wp-content/uploads/2026/04/nogavice_si.jpg"
       alt="Size Guide">
       
       
@@ -229,7 +229,7 @@
     
     style="margin-top: 35px;margin-bottom: 0px;"
     
-      src="https://noriks.com/hr/wp-content/uploads/2026/04/hr_majice.jpeg"
+      src="https://noriks.com/si/wp-content/uploads/2026/04/tablica_si.jpg"
       alt="Size Guide">
       
       
@@ -237,7 +237,7 @@
     
     style="margin-top: 0px;margin-bottom: 0px;"
     
-      src="/hr/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="https://noriks.com/si/wp-content/uploads/2026/04/bokserice_si.jpg"
       alt="Size Guide">
      
       
@@ -478,7 +478,7 @@
             <thead>
               <tr>
                 <th class="noriks-sc-empty" style="width:42px;"></th>
-                <th class="noriks-sc-empty" style="width:80px;">Veličina</th>
+                <th class="noriks-sc-empty" style="width:80px;">Velikost</th>
                 <th>59-68 kg</th>
                 <th>69-77 kg</th>
                 <th>78-84 kg</th>
@@ -492,7 +492,7 @@
             </thead>
             <tbody>
               <tr>
-                <th class="noriks-sc-vis-label" rowspan="11">Visina (cm)</th>
+                <th class="noriks-sc-vis-label" rowspan="11">Višina (cm)</th>
                 <th>168 cm</th>
                 <td class="noriks-sc-size">S</td>
                 <td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td>
@@ -615,31 +615,31 @@
         </div>
 
         <div class="noriks-sc-steps">
-          <h3>Kako pronaći svoju veličinu</h3>
+          <h3>Kako poiskati svojo velikost</h3>
           <div class="noriks-sc-steps-grid">
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">1</span>
-              <span>Pronađi svoju <strong>visinu</strong> u lijevom stupcu.</span>
+              <span>Poišči svojo <strong>višino</strong> v levem stolpcu.</span>
             </div>
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">2</span>
-              <span>Pronađi svoju <strong>težinu</strong> u gornjem redu.</span>
+              <span>Poišči svojo <strong>težo</strong> v zgornji vrstici.</span>
             </div>
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">3</span>
-              <span>Polje gdje se sijeku &mdash; to je tvoja veličina.</span>
+              <span>Polje, kjer se sekata &mdash; to je tvoja velikost.</span>
             </div>
           </div>
         </div>
 
         <div class="noriks-sc-pro">
-          <span class="noriks-sc-pro-tag">PRO SAVJET</span>
-          <span>Ako si između dvije veličine i želiš <strong>opušteniji kroj</strong>, uzmi veću. Za <strong>pripijeniji izgled</strong> uzmi manju.</span>
+          <span class="noriks-sc-pro-tag">PRO NASVET</span>
+          <span>Če si med dvema velikostima in želiš <strong>bolj sproščen kroj</strong>, vzemi večjo. Za <strong>bolj prilegajoč videz</strong> vzemi manjšo.</span>
         </div>
 
         <div class="noriks-sc-guarantee">
           <span class="noriks-sc-check">&#10003;</span>
-          <span>Nisi siguran? Besplatna zamjena veličine u 90 dana.</span>
+          <span>Nisi prepričan? Brezplačna zamenjava velikosti v 90 dneh.</span>
         </div>
       </div>
 

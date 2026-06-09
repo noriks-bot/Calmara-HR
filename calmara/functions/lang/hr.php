@@ -6,7 +6,7 @@ add_filter( 'gettext', 'translate_attribute_labels', 20, 3 );
 
 function translate_attribute_labels( $translated_text, $text, $domain ) {
     if ( $text === 'Choose your size' ) {
-        $translated_text = 'Veličina';
+        $translated_text = 'Velikost';
     }
     return $translated_text;
 }
@@ -17,7 +17,7 @@ function translate_attribute_labels( $translated_text, $text, $domain ) {
 add_filter( 'woocommerce_checkout_fields', 'custom_billing_phone_placeholder' );
 function custom_billing_phone_placeholder( $fields ) {
     // Change the placeholder text for the billing phone field
-    $fields['billing']['billing_phone']['placeholder'] = 'Broj mobilnog telefona';
+    $fields['billing']['billing_phone']['placeholder'] = 'Telefonska številka';
     
     return $fields;
 }

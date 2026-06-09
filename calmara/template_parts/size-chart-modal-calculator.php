@@ -336,21 +336,21 @@ border: 1px solid #ccc;
         <img class="sc_m_img1" style="display: none; width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;" src="<?php echo get_field("size_chart_modal_image1", "options"); ?>" alt="Size Guide">
+    display: block;" src="<?php echo get_field("size_chart_modal_image1", "options"); ?>" alt="Vodnik po velikostih">
     
     
     
     <img class="sc_m_img2" style="width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;" src="<?php echo get_field("size_chart_modal_image2", "options"); ?>" alt="Size Guide">
+    display: block;" src="<?php echo get_field("size_chart_modal_image2", "options"); ?>" alt="Vodnik po velikostih">
     
     
     
     <img class="sc_m_img3" style="display: none; width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;" src="<?php echo get_field("size_chart_modal_image3", "options"); ?>" alt="Size Guide">
+    display: block;" src="<?php echo get_field("size_chart_modal_image3", "options"); ?>" alt="Vodnik po velikostih">
     
     
     
@@ -372,19 +372,19 @@ border: 1px solid #ccc;
         
           <img class="sc_m_img1" style="width:  33.33%; border:none; margin: 0 auto; display:inline; height: auto;
  
- " src="<?php echo get_field("size_chart_modal_image1", "options"); ?>" alt="Size Guide">
+ " src="<?php echo get_field("size_chart_modal_image1", "options"); ?>" alt="Vodnik po velikostih">
     
     
     
     <img class="sc_m_img2" style="width:  33.33%;   border:none; margin: 0 auto; display:inline; height: auto;
   
-  " src="<?php echo get_field("size_chart_modal_image2", "options"); ?>" alt="Size Guide">
+  " src="<?php echo get_field("size_chart_modal_image2", "options"); ?>" alt="Vodnik po velikostih">
     
     
     
     <img class="sc_m_img3" style="; width: 33.33%;  border:none;  margin: 0 auto; display:inline; height: auto;
 
-" src="<?php echo get_field("size_chart_modal_image3", "options"); ?>" alt="Size Guide">
+" src="<?php echo get_field("size_chart_modal_image3", "options"); ?>" alt="Vodnik po velikostih">
     
         
     </div>
@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    30 dana jamstva na zamjenu veličine
+    30-dnevna garancija za zamenjavo velikosti
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     30 dana jamstva na zamjenu veličine
+     30-dnevna garancija za zamenjavo velikosti
 
          
    
@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const baseSize = getBaseSize(height, weight);
             const bodyType = selectedInput.value;
             const finalSize = adjustSize(baseSize, bodyType);
-            resultDiv.innerHTML = `Preporučena veličina: <strong>${finalSize}</strong>`;
+            resultDiv.innerHTML = `Priporočena velikost: <strong>${finalSize}</strong>`;
             resultDiv.style.display = "block";
             
             

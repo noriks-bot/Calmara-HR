@@ -205,7 +205,7 @@ body.woocommerce-checkout #payment .wc_payment_method > label img {
 }
 /* Fee badges — "Besplatno" for card & PayPal, price for COD */
 body.woocommerce-checkout #payment .wc_payment_method > label::after {
-  content: 'Besplatno' !important;
+  content: 'Brezplačno' !important;
   display: inline-block !important;
   padding: 3px 10px !important;
   margin-left: auto !important;
@@ -239,7 +239,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
 
 /* ===== Field descriptions via CSS ::after ===== */
 #billing_email_field::after {
-  content: 'Za potvrdu narudžbe i praćenje pošiljke';
+  content: 'Za potrditev naročila in sledenje pošiljki';
   display: block;
   font-size: 13px;
   color: #5f6061;
@@ -252,7 +252,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   position: relative !important;
 }
 #billing_phone_field::after {
-  content: 'Primjer: 0912345678' !important;
+  content: 'Primer: 031234567' !important;
   position: absolute !important;
   left: 0 !important;
   bottom: -20px !important;
@@ -261,7 +261,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   line-height: 1.4 !important;
 }
 #billing_phone_field::before {
-  content: 'Za pomoć s dostavom' !important;
+  content: 'Za pomoč pri dostavi' !important;
   position: absolute !important;
   right: 0 !important;
   bottom: -20px !important;
@@ -405,5 +405,5 @@ body.woocommerce-checkout .noriks-order-summary .review-product-info div {
   font-weight: 500 !important;
 }
 
-/* More space between total and Naruči button */
+/* More space between total and Naroči button */
 .noriks-order-summary .vigo-checkout-total__sum { margin-bottom: 10px !important; }

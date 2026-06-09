@@ -154,14 +154,14 @@ if( get_field('multipack_option_1', get_the_ID())  == true  ) {
         
         
         <section class="option-group">
- <!-- <h2 class="option-title">Boja</h2>-->
+ <!-- <h2 class="option-title">Barva</h2>-->
 
   <?php
   
 // Check if current product is in category "singles-boxers"
-$is_singles_boxers = has_term( '1-komad-bokserice', 'product_cat', $current_product_id );
+$is_singles_boxers = has_term( '1-kos-boksarice', 'product_cat', $current_product_id );
 
-$is_singles_majice = has_term( '1-komad-majice', 'product_cat', $current_product_id );
+$is_singles_majice = has_term( '1-kos-majice', 'product_cat', $current_product_id );
 
 
 
@@ -170,7 +170,7 @@ if ( $is_singles_boxers ) {
     
 ?>
 
-<h2 class="option-title">Boja</h2>
+<h2 class="option-title">Barva</h2>
 
 
 <?php
@@ -182,7 +182,7 @@ if ( $is_singles_boxers ) {
             array(
                 'taxonomy' => 'product_cat',
                 'field'    => 'slug',
-                'terms'    => 'singles-boxers',
+                'terms'    => '1-kos-boksarice',
             ),
         ),
         'orderby' => 'date',
@@ -194,7 +194,7 @@ if ( $is_singles_boxers ) {
     
     ?>
 
-<h2 class="option-title">Boja</h2>
+<h2 class="option-title">Barva</h2>
 
 
 <?php
@@ -207,7 +207,7 @@ if ( $is_singles_boxers ) {
             array(
                 'taxonomy' => 'product_cat',
                 'field'    => 'slug',
-                'terms'    => 'singles',
+                'terms'    => '1-kos-majice',
             ),
         ),
         'orderby' => 'date',

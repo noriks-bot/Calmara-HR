@@ -12,7 +12,7 @@ function noriks_register_landigs_post_type() {
         'edit_item'             => __('Edit Landing', 'textdomain'),
         'view_item'             => __('View Landing', 'textdomain'),
         'all_items'             => __('All Landigs', 'textdomain'),
-        'search_items'          => __('Search Landigs', 'textdomain'),
+        'search_items'          => __('Išči Landigs', 'textdomain'),
         'not_found'             => __('No landigs found.', 'textdomain'),
         'not_found_in_trash'    => __('No landigs found in Trash.', 'textdomain'),
         'featured_image'        => _x('Landing Image', 'Overrides the “Featured Image” phrase.', 'textdomain'),
@@ -83,12 +83,12 @@ function noriks_render_landigs_meta_box($post) {
     $fields = array(
         '_landigs_target_product_id'  => '',
         '_landigs_target_product_url' => '',
-        '_landigs_primary_label'      => 'Boja',
-        '_landigs_primary_options'    => "Crna|#000000\nBijela|#f5f5f5\nSiva|#9ca3af\nTamnoplava|#243647\nSmeđa|#7c5a3c\nMaslinasta|#607d33",
-        '_landigs_secondary_label'    => 'Veličina',
+        '_landigs_primary_label'      => 'Barva',
+        '_landigs_primary_options'    => "Črna|#000000\nBela|#f5f5f5\nSiva|#9ca3af\nTemno modra|#243647\nRjava|#7c5a3c\nOlivna|#607d33",
+        '_landigs_secondary_label'    => 'Velikost',
         '_landigs_secondary_options'  => "S\nM\nL\nXL\nXXL\n3XL\n4XL",
         '_landigs_hide_secondary'     => '0',
-        '_landigs_offer_options'      => "1|1 majica|odličan ulazni paket 17.96€|PRIHRANITE 49%\n2|2 majice|najbolji omjer cijene i količine 44.28€|PRIHRANITE 59%\n3|3 majice|najveća ušteda po komadu 69.26€|PRIHRANITE 62%\n5|5 majica|najveći paket za maksimalnu uštedu 135.38€|PRIHRANITE 73%",
+        '_landigs_offer_options'      => "1|1 majica|odličen začetni paket 17.96€|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 44.28€|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 69.26€|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 135.38€|PRIHRANITE 73%",
     );
 
     echo '<table class="form-table"><tbody>';
@@ -183,13 +183,13 @@ function noriks_ensure_default_step_landing() {
     }
 
     update_post_meta($post_id, '_landigs_target_product_id', 3421);
-    update_post_meta($post_id, '_landigs_target_product_url', home_url('/hr/product/noriks-majica/'));
-    update_post_meta($post_id, '_landigs_primary_label', 'Boja');
-    update_post_meta($post_id, '_landigs_primary_options', "Crna|#000000\nBijela|#f5f5f5\nSiva|#9ca3af\nTamnoplava|#243647\nSmeđa|#7c5a3c\nMaslinasta|#607d33");
-    update_post_meta($post_id, '_landigs_secondary_label', 'Veličina');
+    update_post_meta($post_id, '_landigs_target_product_url', home_url('/si/product/noriks-majica/'));
+    update_post_meta($post_id, '_landigs_primary_label', 'Barva');
+    update_post_meta($post_id, '_landigs_primary_options', "Črna|#000000\nBela|#f5f5f5\nSiva|#9ca3af\nTemno modra|#243647\nRjava|#7c5a3c\nOlivna|#607d33");
+    update_post_meta($post_id, '_landigs_secondary_label', 'Velikost');
     update_post_meta($post_id, '_landigs_secondary_options', "S\nM\nL\nXL\nXXL\n3XL\n4XL");
     update_post_meta($post_id, '_landigs_hide_secondary', '0');
-    update_post_meta($post_id, '_landigs_offer_options', "1|1 majica|odličan ulazni paket 17.96€|PRIHRANITE 49%\n2|2 majice|najbolji omjer cijene i količine 44.28€|PRIHRANITE 59%\n3|3 majice|najveća ušteda po komadu 69.26€|PRIHRANITE 62%\n5|5 majica|najveći paket za maksimalnu uštedu 135.38€|PRIHRANITE 73%");
+    update_post_meta($post_id, '_landigs_offer_options', "1|1 majica|odličen začetni paket 17.96€|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 44.28€|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 69.26€|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 135.38€|PRIHRANITE 73%");
     flush_rewrite_rules(false);
 }
 
@@ -197,7 +197,7 @@ function noriks_register_collections_taxonomy() {
     $labels = array(
         'name'              => _x('Collections', 'taxonomy general name', 'textdomain'),
         'singular_name'     => _x('Collection', 'taxonomy singular name', 'textdomain'),
-        'search_items'      => __('Search Collections', 'textdomain'),
+        'search_items'      => __('Išči kolekcije', 'textdomain'),
         'all_items'         => __('All Collections', 'textdomain'),
         'edit_item'         => __('Edit Collection', 'textdomain'),
         'update_item'       => __('Update Collection', 'textdomain'),
@@ -352,7 +352,7 @@ function noriks_render_collection_product_order_ui($selected_raw = '', $term_id 
 
     echo '<div class="noriks-product-order-column noriks-product-order-column--available">';
     echo '<h4>' . esc_html__('All Products', 'textdomain') . '</h4>';
-    echo '<input type="search" class="regular-text noriks-product-order-search" placeholder="' . esc_attr__('Search by name or SKU', 'textdomain') . '">';
+    echo '<input type="search" class="regular-text noriks-product-order-search" placeholder="' . esc_attr__('Išči po nazivu ali SKU', 'textdomain') . '">';
     echo '<ul class="noriks-product-order-list noriks-product-order-list--available">';
     foreach ($choices as $choice) {
         $is_selected = in_array($choice['id'], $selected_ids, true);
@@ -486,7 +486,7 @@ function noriks_add_collection_term_fields() {
         <input type="text" id="noriks-collection-bottom-banner-button-url" name="noriks_collection_bottom_banner_button_url" value="">
     </div>
     <div class="form-field term-group">
-        <label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Bottom Banner Background Color', 'textdomain'); ?></label>
+        <label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Barva ozadja spodnjega bannerja', 'textdomain'); ?></label>
         <input type="color" id="noriks-collection-bottom-banner-bg-color" name="noriks_collection_bottom_banner_bg_color" value="#f0eaea">
     </div>
     <div class="form-field term-group">
@@ -589,7 +589,7 @@ function noriks_edit_collection_term_fields($term) {
         <td><input type="text" id="noriks-collection-bottom-banner-button-url" name="noriks_collection_bottom_banner_button_url" value="<?php echo esc_attr($bottom_banner_button_url); ?>" class="large-text"></td>
     </tr>
     <tr class="form-field term-group-wrap">
-        <th scope="row"><label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Bottom Banner Background Color', 'textdomain'); ?></label></th>
+        <th scope="row"><label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Barva ozadja spodnjega bannerja', 'textdomain'); ?></label></th>
         <td><input type="color" id="noriks-collection-bottom-banner-bg-color" name="noriks_collection_bottom_banner_bg_color" value="<?php echo esc_attr($bottom_banner_bg_color ? $bottom_banner_bg_color : '#f0eaea'); ?>"></td>
     </tr>
     <tr class="form-field term-group-wrap">
@@ -977,7 +977,7 @@ function register_custom_post_type_lander() {
         'edit_item'             => __('Edit Lander', 'textdomain'),
         'view_item'             => __('View Lander', 'textdomain'),
         'all_items'             => __('All Landers', 'textdomain'),
-        'search_items'          => __('Search Landers', 'textdomain'),
+        'search_items'          => __('Išči Landerje', 'textdomain'),
         'not_found'             => __('No landers found.', 'textdomain'),
         'not_found_in_trash'    => __('No landers found in Trash.', 'textdomain'),
         'featured_image'        => _x('Lander Cover Image', 'Overrides the “Featured Image” phrase.', 'textdomain'),
@@ -1022,7 +1022,7 @@ function register_custom_post_type_product_reviews() {
         'edit_item'             => __('Edit Product Review', 'textdomain'),
         'view_item'             => __('View Product Review', 'textdomain'),
         'all_items'             => __('All Product Reviews', 'textdomain'),
-        'search_items'          => __('Search Product Reviews', 'textdomain'),
+        'search_items'          => __('Išči ocene izdelkov', 'textdomain'),
         'not_found'             => __('No product reviews found.', 'textdomain'),
         'not_found_in_trash'    => __('No product reviews found in Trash.', 'textdomain'),
         'featured_image'        => _x('Product Image', 'Overrides the “Featured Image” phrase.', 'textdomain'),
@@ -1070,7 +1070,7 @@ function register_custom_post_type_lander2() {
         'edit_item'             => __('Edit Lander 2', 'textdomain'),
         'view_item'             => __('View Lander 2', 'textdomain'),
         'all_items'             => __('All Landers 2', 'textdomain'),
-        'search_items'          => __('Search Landers 2', 'textdomain'),
+        'search_items'          => __('Išči Landerje 2', 'textdomain'),
         'not_found'             => __('No landers found.', 'textdomain'),
         'not_found_in_trash'    => __('No landers found in Trash.', 'textdomain'),
         'featured_image'        => _x('Lander 2 Image', 'Overrides the Featured Image phrase', 'textdomain'),

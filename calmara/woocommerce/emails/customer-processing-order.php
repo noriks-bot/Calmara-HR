@@ -42,20 +42,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoje naročilo je  prejeto – hvala, ker si izbral NORIKS!
 	<br/>	<br/>
-	Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+	Zdaj pripravljamo tvoj NORIKS izdelek in kmalu bo na poti.
     <br/><br/>
-    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
+    Samo udobje in dober občutek – ves dan.<br/><br/>
     
-    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
-    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
+    Sporočili ti bomo, ko bo tvoj paket odposlan.<br/>
+    Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
+    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
+    Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
     
-    NORIKS tim
+    Ekipa NORIKS
     </p>
 
 	
@@ -65,20 +65,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoje naročilo je uspešno prejeto – hvala, ker si izbral NORIKS!
 	<br/>	<br/>
-Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+Zdaj pripravljamo tvoj NORIKS izdelek in kmalu bo na poti.
     <br/><br/>
-    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
+    Samo udobje in dober občutek – ves dan.<br/><br/>
     
-    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
-    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
+    Sporočili ti bomo, ko bo tvoj paket odposlan.<br/>
+    Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
+    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
+    Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
     
-    NORIKS tim
+    Ekipa NORIKS
     </p>
 
 

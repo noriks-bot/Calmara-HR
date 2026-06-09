@@ -15,9 +15,7 @@ defined( 'ABSPATH' ) || exit;
         // Orto bundle products are added to cart with quantity = 1 but the
         // selected offer (e.g. "3 paira") stores the real item count in
         // _orto_bundle_pairs (see orto-product plugin gck_add_cart_item_data).
-        // Show the real number of pieces in the "Nx" prefix so e.g. a single
-        // 3-pack of "NORIKS | Majica" displays as "3x NORIKS | Majica"
-        // instead of "1x NORIKS | Majica".
+        // Show the real number of pieces in the "Nx" prefix.
         $display_qty = $qty;
         if ( ! empty( $cart_item['_orto_bundle_pairs'] ) ) {
           $display_qty = $qty * (int) $cart_item['_orto_bundle_pairs'];
@@ -50,7 +48,7 @@ defined( 'ABSPATH' ) || exit;
             if ( $ship > 0 ) {
               echo wc_price( $ship );
             } else {
-              echo '<span class="shipping-free-badge">Besplatno</span>';
+              echo '<span class="shipping-free-badge">Brezplačno</span>';
             }
           ?>
         </div>
@@ -81,7 +79,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="vigo-checkout-total__sum flex flex--middle border_price">
     <div class="flex__item f--l">
-      Ukupni iznos: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
+      Skupni znesek: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
     </div>
   </div>
 </div>

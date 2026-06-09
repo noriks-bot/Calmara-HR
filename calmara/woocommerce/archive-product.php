@@ -46,23 +46,23 @@ function is_active_menu_item( $path ) {
 <nav class="category-menu">
   <ul>
     <li class="<?php echo is_shop() ? 'active' : ''; ?>">
-      <a href="/hr/shop">Svi produkti</a>
+      <a href="/si/shop">Vsi izdelki</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/majice') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/majice/">Majice</a>
+      <a href="/si/product-category/majice/">Majice</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/bokserice') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/bokserice/">Bokserice</a>
+    <li class="<?php echo is_active_menu_item('/product-category/boksarice') ? 'active' : ''; ?>">
+      <a href="/si/product-category/boksarice/">Bokserice</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/kompleti') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/kompleti/">Kompleti</a>
+      <a href="/si/product-category/kompleti/">Kompleti</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/carape') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/carape/">Čarape</a>
+    <li class="<?php echo is_active_menu_item('/product-category/nogavice') ? 'active' : ''; ?>">
+      <a href="/si/product-category/nogavice/">Nogavice</a>
     </li>
   </ul>
 </nav>
@@ -359,7 +359,7 @@ if ( is_shop() ) {
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
 // CATEGORY: /bokserice + ALL CHILD CATEGORIES
-} elseif ( is_product_category_or_child('bokserice') ) {
+} elseif ( is_product_category_or_child('boksarice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2-2"]');
 
@@ -367,10 +367,10 @@ if ( is_shop() ) {
 } elseif (
     is_product_category_or_child('bestsellers') ||
     is_product_category_or_child('veliki-paketi') ||
-    is_product_category_or_child('starter-paketi')
+    is_product_category_or_child('zacetni-paketi')
 ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="default-preset-2-3"]');
+    echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
 // CATEGORY: /majice + children
 } elseif ( is_product_category_or_child('majice') ) {
@@ -383,7 +383,7 @@ if ( is_shop() ) {
     echo do_shortcode('[yith_wcan_filters slug="default-preset"]');
 
 // CATEGORY: /carape + children
-} elseif ( is_product_category_or_child('carape') ) {
+} elseif ( is_product_category_or_child('nogavice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2"]');
 

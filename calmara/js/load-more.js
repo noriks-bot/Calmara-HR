@@ -26,7 +26,7 @@ jQuery(function($) {
                     if (page >= maxPage) {
                         $('#load-more').hide();
                     } else {
-                        $('#load-more').text('Prikaži više');
+                        $('#load-more').text('Prikaži več');
                     }
                 } else {
                     $('#load-more').hide();
