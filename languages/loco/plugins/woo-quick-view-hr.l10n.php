@@ -1,0 +1,2 @@
+<?php
+return ['project-id-version'=>'Woo Quick View','pot-creation-date'=>'2016-06-29 09:07+0530','po-revision-date'=>'2025-07-23 11:13+0000','last-translator'=>'','language-team'=>'Croatian','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','report-msgid-bugs-to'=>'','language'=>'hr','plural-forms'=>'nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2;','x-generator'=>'Loco https://localise.biz/','x-loco-version'=>'2.8.0; wp-6.8.2; php-8.1.32','messages'=>[]];
