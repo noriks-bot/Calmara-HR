@@ -1,1 +1,0 @@
-System.register([],function(e,t){"use strict";return{execute:function(){var e=document.createElement("style");e.textContent="table#woosea-fieldmapping-table td{vertical-align:top}\n/*$vite$:1*/",document.head.appendChild(e)}}});
